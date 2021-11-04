@@ -1,4 +1,4 @@
-package gameplay;
+import characters.Player;
 
 import java.util.Scanner;
 

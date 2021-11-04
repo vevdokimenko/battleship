@@ -1,4 +1,4 @@
-package gameplay;
+package characters;
 
 public class Field {
     private static final byte LENGTH = 10;

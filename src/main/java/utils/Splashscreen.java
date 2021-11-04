@@ -1,6 +1,6 @@
 package utils;
 
-import gameplay.Field;
+import characters.Field;
 
 public class Splashscreen {
     public Splashscreen() {

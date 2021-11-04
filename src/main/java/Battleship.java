@@ -1,16 +1,20 @@
-import gameplay.Gameplay;
+import characters.Player;
+import characters.Ship;
 import utils.Splashscreen;
 
 import java.io.PrintStream;
 import java.io.UnsupportedEncodingException;
+import java.util.List;
 
 public class Battleship {
     public static void main(String[] args) throws UnsupportedEncodingException {
         System.setOut(new PrintStream(System.out, true, "utf-8"));
 
-        new Splashscreen();
+        Player player = new Player("");
+        player.fillPlayerField();
 
-        new Gameplay();
+//        new Splashscreen();
+//        new Gameplay();
     }
 }
 
