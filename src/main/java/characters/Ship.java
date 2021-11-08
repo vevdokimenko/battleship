@@ -4,10 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Ship {
-    private int x;
-    private int y;
+    private List<Coord> coords = new ArrayList<>();
     private int deck;
-    private int[][] coords = new int[deck][deck];
     private int wound = 0;
 
     public Ship(int deck) {
@@ -19,8 +17,7 @@ public class Ship {
     }
 
     public void setCoords(int x, int y) {
-        this.x = x;
-        this.y = y;
+        coords.add(new Coord(x, y));
     }
 
     public static List<Ship> getShips() {
@@ -31,7 +28,6 @@ public class Ship {
                 ships.add(new Ship(i));
             }
         }
-
         return ships;
     }
 }
